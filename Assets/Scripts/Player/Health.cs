@@ -17,6 +17,16 @@ public class Health : MonoBehaviour
         _currentAnimation = GetComponent<Animator>();
     }
 
+    public float GetCurrentHealth()
+    {
+        return _currentHealth;
+    }
+    
+    public float GetPercentageOfCurrentHealth()
+    {
+        return _currentHealth / _maxHealth;
+    }
+
     public void TakeDamage(float damage)
     {
         _currentHealth -= damage;

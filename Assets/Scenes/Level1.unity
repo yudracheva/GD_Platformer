@@ -1936,6 +1936,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 147060284}
+  - component: {fileID: 147060286}
+  - component: {fileID: 147060285}
   m_Layer: 5
   m_Name: Money
   m_TagString: Untagged
@@ -1967,6 +1969,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.0000038146973, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &147060285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147060283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41d2f4c9aaf943240a293cf316cc6263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _money: {fileID: 185647180}
+  _text: {fileID: 143760954}
+--- !u!114 &147060286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147060283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41d2f4c9aaf943240a293cf316cc6263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _money: {fileID: 0}
+  _text: {fileID: 0}
 --- !u!1 &172531506
 GameObject:
   m_ObjectHideFlags: 0
@@ -2235,6 +2265,7 @@ GameObject:
   - component: {fileID: 185647176}
   - component: {fileID: 185647178}
   - component: {fileID: 185647179}
+  - component: {fileID: 185647180}
   m_Layer: 0
   m_Name: RedHood
   m_TagString: Player
@@ -2439,6 +2470,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2015f189a4f23c74da6f07d8d7dbb79a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &185647180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185647170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 222eec251fc779a4bb22bb7031a44786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &225157092
@@ -7350,6 +7393,7 @@ GameObject:
   - component: {fileID: 1267760229}
   - component: {fileID: 1267760231}
   - component: {fileID: 1267760230}
+  - component: {fileID: 1267760232}
   m_Layer: 5
   m_Name: HPFull
   m_TagString: Untagged
@@ -7415,6 +7459,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267760228}
   m_CullTransparentMesh: 1
+--- !u!114 &1267760232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267760228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1caaeeacd981d3b4c89346beb86a9dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 185647178}
 --- !u!1 &1272173826
 GameObject:
   m_ObjectHideFlags: 0
