@@ -6,6 +6,9 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] private float _maxHealth;
+    [SerializeField] private GameObject _deadPanel;
+    [SerializeField] private GameObject[] _othersPanel;
+    
     private float _currentHealth;
     public bool IsAlive { get; private set; }
     private Animator _currentAnimation;
@@ -34,7 +37,11 @@ public class Health : MonoBehaviour
         CheckIsAlive();
         if (!IsAlive)
         {
-            
+            _deadPanel.SetActive(true);
+            foreach (var panel in _othersPanel)
+            {
+                panel.SetActive(false);
+            }
         }
     }
 

@@ -15,13 +15,14 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
+        return;
         var horizontalDirection = Input.GetAxis(GlobalStringVars.HORIZONTAL_AXIS);
         var isJumpButtonPressed = Input.GetButtonDown(GlobalStringVars.JUMP);
 
         playerMovement.Move(horizontalDirection, isJumpButtonPressed); 
 
-        var isAttackButtonPressed = Input.GetButtonDown(GlobalStringVars.ATTACK);
-        if (isAttackButtonPressed)
-            playerAttack.Attack();
+        //var isAttackButtonPressed = Input.GetButtonDown(GlobalStringVars.ATTACK);
+        //if (isAttackButtonPressed)
+//            playerAttack.Attack();
     }
 }

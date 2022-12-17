@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(float horizontalDirection, bool isJumpButtonPressed)
     {
-        if (!_health.IsAlive) 
+        if (!_health.IsAlive)
             return;
 
         if (_isGrounded && _isJumping)
@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         _spriteRenderer.flipX = horizontalDirection < 0;
     }
 
-    private void Jump()
+    public void Jump()
     {
         if (_isGrounded)
         {
