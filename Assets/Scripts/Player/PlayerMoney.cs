@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Money : MonoBehaviour
+public class PlayerMoney : MonoBehaviour
 {
     private int _currentValueOfMoney = 0;
 

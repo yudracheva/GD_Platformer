@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class MoneyGUI : MonoBehaviour
 {
-    [SerializeField] private Money _money;
+    [FormerlySerializedAs("_money")] [SerializeField] private PlayerMoney playerMoney;
     [SerializeField] private TMP_Text _text;
 
     // Update is called once per frame
     void Update()
     {
-        _text.text = _money.GetCurrentAmountOfMoney().ToString();
+        _text.text = playerMoney.GetCurrentAmountOfMoney().ToString();
     }
 }
